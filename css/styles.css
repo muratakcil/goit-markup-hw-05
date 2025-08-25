@@ -29,6 +29,16 @@ address ul li a:hover {
 button:hover {
     background-color: #404BBF;
 }
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 240px;
+    box-shadow: none;
+}
+
+
 .menu {
     list-style: none;
     display: flex;
@@ -394,6 +404,12 @@ a {
     gap: 20px;
 }
 
+.footer-form-up input::placeholder {
+    color: #FFFFFF;
+}
+
+
+
 .footer-form input {
     padding: 8px 12px;
     border: 1px solid #E7E9FC;
@@ -401,7 +417,6 @@ a {
     width: 200px;
     height: 40px;
     background-color: #2E2F42;
-    color: #fff;
     
 }
 .footer-form button {
@@ -436,14 +451,23 @@ a {
     display: flex;
     align-items: center;
     
-    gap: 6px;
+    gap: 8px;
     flex-direction: column;
     
+}
+
+.form-end button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: none;
 }
 .form-end label {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
+    color: #a2a3a7;
 }
 
 .form {
@@ -451,15 +475,102 @@ a {
     align-items: center;
     border: 1px solid black;
     border-radius: 5px;
-    width: 408px;
+    margin: 0  auto;
+    width: 480px;
     justify-content: center;
-    flex-direction: column
+    flex-direction: column;
+    padding: 40px 10px;
 
+}
+
+.name input {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #a2a3a7;
+    color: #fff;
+    width: 420px;
+}
+.phone input {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #a2a3a7;
+    color: #fff;
+    width: 420px;
+}
+.email input {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #a2a3a7;
+    color: #fff;
+    width: 420px;
+}
+.comment textarea{
+    display: block;
+    width: 420px;
+    height: 140px;
+    border-radius: 4px;
+    border: 1px solid #a2a3a7;
+    padding: 10px;
+}
+
+.privacy-policy {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color: #a2a3a7;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.privacy-policy span {
+    color: #4D5AE5;
+    text-decoration: underline;
 }
 
 .form p {
     display: flex;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.name {
+    position: relative;
+}
+
+.name-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+.phone {
+    position: relative;
+}
+.phone-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+.email {
+    position: relative;
+}
+.email-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+.form-end input:focus-within {
+    border: 1px solid #404BBF;
 }
