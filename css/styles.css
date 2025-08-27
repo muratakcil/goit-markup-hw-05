@@ -468,9 +468,13 @@ a {
     gap: 8px;
     color: #a2a3a7;
 }
+.form-end input {
+    color: black;
+    height: 50px;
+}
 
 .form {
-    display: flex;
+    display: none;
     align-items: center;
     border: 1px solid black;
     border-radius: 5px;
@@ -479,7 +483,12 @@ a {
     justify-content: center;
     flex-direction: column;
     padding: 40px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
 
+}
+.is-open {
+    display: flex;
 }
 
 .name input {
@@ -488,7 +497,6 @@ a {
     align-items: center;
     padding: 8px 12px;
     border: 1px solid #a2a3a7;
-    color: #fff;
     width: 420px;
 }
 .phone input {
@@ -497,7 +505,6 @@ a {
     align-items: center;
     padding: 8px 12px;
     border: 1px solid #a2a3a7;
-    color: #fff;
     width: 420px;
 }
 .email input {
@@ -506,7 +513,6 @@ a {
     align-items: center;
     padding: 8px 12px;
     border: 1px solid #a2a3a7;
-    color: #fff;
     width: 420px;
 }
 .comment textarea{
@@ -545,31 +551,20 @@ a {
     flex-direction: column;
 }
 
-.name {
-    position: relative;
+
+.form-end input:focus-within {
+    border-color: #404BBF;
+    outline: none;
+}
+.comment textarea:focus-within {
+    border-color: #404BBF;
+    outline: none;
 }
 
-.name-icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-}
-.phone {
-    position: relative;
-}
-.phone-icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-}
-.email {
-    position: relative;
-}
-.email-icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-}
-.form-end input:focus-within {
-    border: 1px solid #404BBF;
-}
+.form-icon {    
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-top: -36px;
+    margin-left: 15px;
+   }

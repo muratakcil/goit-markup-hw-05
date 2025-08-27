@@ -47,7 +47,7 @@
         for Your Business
       </h1>
       <button class="button">Order Service</button>
-    </section>  
+    </section>
     <section class="categories">
   <ul class="categories-list">
     <li>
@@ -296,17 +296,29 @@
     <div class="name">
       <label for="name">Name</label>
       <input type="text" name="name" id="name"/>
-      <img class="name-icon" src="./images/name.jpg" alt="">
+      <div class="form-icon">
+      <svg class="icon icon-name">
+        <use xlink:href="./images/symbol-defs.svg#icon-name"></use>
+      </svg>
+      </div>
     </div>
     <div class="phone">
       <label for="phone">Phone</label>
       <input type="tel" name="phone" id="phone"/>
-      <img class="phone-icon" src="./images/tel.jpg" alt="">
+      <div class="form-icon">
+      <svg class="icon icon-phone">
+        <use xlink:href="./images/symbol-defs.svg#icon-phone"></use>
+      </svg>
+    </div>
     </div>
     <div class="email">
       <label for="email">E-mail</label>
       <input type="email" name="email" id="email"/>
-      <img class="email-icon" src="./images/email.jpg" alt="">
+      <div class="form-icon">
+      <svg class="icon icon-email">
+        <use xlink:href="./images/symbol-defs.svg#icon-email"></use>
+      </svg>
+      </div>
     </div>
     <div class="comment">
       <label for="comment">Comment</label>
@@ -316,8 +328,8 @@
       <input type="checkbox" id="privacy-policy" required>
       <label for="privacy-policy">
     I accept the terms and conditions of the <span>Privacy Policy</span>
-  </label>
-    </div>
+      </label>
+  </div>
     <button type="submit">Send</button>
   </form>
 </div>
