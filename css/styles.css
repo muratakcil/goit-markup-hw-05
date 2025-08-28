@@ -469,9 +469,10 @@ a {
     color: #a2a3a7;
 }
 .form-end input {
+    position: relative;
     color: black;
     height: 50px;
-    padding-left: 10px;
+    padding-left: 38px;
 }
 
 .is-open {
@@ -484,7 +485,6 @@ a {
     align-items: center;
     border: 1px solid #a2a3a7;
     width: 420px;
-    padding-left: 12px;
 }
 .phone input {
     border-radius: 4px;
@@ -548,13 +548,28 @@ a {
     outline: none;
 }
 
-.form-icon svg {
+.name svg {
     position: absolute;
-    width: 24px;
-    height: 24px;
-    margin-left: 15px;
-}
-
+    width: 26px;
+    height: 26px;
+    margin-left: 12px;
+    top: 7%;
+ }
+ .phone svg {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    margin-left: 12px;
+    top: 22%;
+ }
+.email svg {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    margin-left: 12px;
+    top: 37%;
+    
+ }
 .backdrop {
   position: fixed;
   top: 0;
