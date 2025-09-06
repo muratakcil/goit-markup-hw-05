@@ -536,19 +536,29 @@ a {
     justify-content: center;
     flex-direction: column;
 }
-
-
 .form-end input:focus-within {
     border-color: #404BBF;
     outline: none;
 }
-.comment textarea:focus-within {
-    border-color: #404BBF;
+
+
+.name input:focus-within + .form-icon svg  {
+    fill: #404BBF;
+    stroke: #404BBF;
     outline: none;
 }
-.form-icon:focus-within {
-    stroke: #404BBF;
+.phone input:focus-within + .form-icon svg  {
     fill: #404BBF;
+    stroke: #404BBF;
+    outline: none;
+}
+.email input:focus-within + .form-icon svg  {
+    fill: #404BBF;
+    stroke: #404BBF;
+    outline: none;
+}
+.comment textarea:focus-within  {
+    border-color: #404BBF;
     outline: none;
 }
 
