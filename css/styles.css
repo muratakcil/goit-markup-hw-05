@@ -467,9 +467,9 @@ a {
     align-items: center;
     gap: 8px;
     color: #a2a3a7;
+    font-size: 12px;
 }
 .form-end input {
-    position: relative;
     color: black;
     height: 50px;
     padding-left: 38px;
@@ -516,8 +516,7 @@ a {
     justify-content: center;
     gap: 8px;
     color: #a2a3a7;
-    font-size: 16px;
-    width: 450px;
+    width: auto;
 }
 
 .privacy-policy span {
@@ -531,7 +530,7 @@ a {
     margin: 0;
     padding: 20px;
     font-size: 16px;
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     width: 400px;
     align-items: center;
     justify-content: center;
@@ -547,28 +546,38 @@ a {
     border-color: #404BBF;
     outline: none;
 }
+.form-icon:focus-within {
+    stroke: #404BBF;
+    fill: #404BBF;
+    outline: none;
+}
 
 .name svg {
     position: absolute;
     width: 26px;
     height: 26px;
     margin-left: 12px;
-    top: 7%;
+    top: 6%;
+    fill: #2E2F42;
+    stroke: #2E2F42;
  }
  .phone svg {
     position: absolute;
     width: 26px;
     height: 26px;
     margin-left: 12px;
-    top: 22%;
+    top: 21%;
+    fill: #2E2F42;
+    stroke: #2E2F42;    
  }
 .email svg {
     position: absolute;
     width: 26px;
     height: 26px;
     margin-left: 12px;
-    top: 37%;
-    
+    top: 36%;
+    fill: #2E2F42;
+    stroke: #2E2F42;
  }
 .backdrop {
   position: fixed;
